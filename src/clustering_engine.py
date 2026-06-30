@@ -18,7 +18,7 @@ def calculate_k_distances(coordinates_rad: np.ndarray, k: int = 4) -> np.ndarray
 def run_spatial_dbscan(coordinates_rad: np.ndarray, eps_km: float, min_samples: int) -> DBSCAN:
     """
     Executes DBSCAN using the Haversine metric. Automatically translates 
-    the human-readable kilometer epsilon into radians for calculation.
+    the kilometer epsilon into radians for calculation.
     """
     EARTH_RADIUS_KM = 6371.009
     
